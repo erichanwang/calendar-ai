@@ -31,7 +31,7 @@ def day_of_week(year):
     K = y % 100
     J = y // 100
     h = (1 + (13 * (m + 1)) // 5 + K + K // 4 + J // 4 - 2 * J) % 7
-    return (h + 1) % 7  # 0=Sunday, 1=Monday, ..., 6=Saturday
+    return (h + 6) % 7  # 0=Sunday, 1=Monday, ..., 6=Saturday
 
 # Function to get the number of days in a month
 def days_in_month(month, year):

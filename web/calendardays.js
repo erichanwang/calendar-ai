@@ -16,7 +16,7 @@ function dayOfWeek(year) {
     const K = y % 100;
     const J = Math.floor(y / 100);
     let h = (1 + Math.floor((13 * (m + 1)) / 5) + K + Math.floor(K / 4) + Math.floor(J / 4) - 2 * J) % 7;
-    return (h + 1) % 7; // 0=Sunday, 1=Monday, ..., 6=Saturday
+    return (h + 6) % 7; // 0=Sunday, 1=Monday, ..., 6=Saturday
 }
 
 // Function to get the number of days in a month
